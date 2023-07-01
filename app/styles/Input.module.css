@@ -1,0 +1,3 @@
+.wrapper label{
+    @apply text-gray-900 text-sm leading-6
+}

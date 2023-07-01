@@ -1,0 +1,11 @@
+.wrapper{
+    @apply mt-8 w-full max-w-md
+}
+
+.wrapper main{
+    @apply bg-white px-4 py-8 shadow rounded-lg
+}
+
+.wrapper main form{
+    @apply space-y-6 font-bold
+}
