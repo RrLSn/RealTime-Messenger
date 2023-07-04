@@ -9,3 +9,11 @@
 .wrapper main form{
     @apply space-y-6 font-bold
 }
+
+.AuthSocialButton{
+    @apply inline-flex w-full justify-center rounded-md bg-white px-4 py-2 text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0 hover:text-blue-500
+}
+
+.variantTrigger{
+    @apply flex justify-center text-sm mt-6 text-gray-500 gap-2
+}
