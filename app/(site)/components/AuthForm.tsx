@@ -101,7 +101,7 @@ const AuthForm = () => {
                     <div>
                         {variant === 'LOGIN' ? 'New to Messenger ?' : 'Already have an account'}
                     </div>
-                    <div onClick={toggleVariant} className='cursor-pointer underline'>
+                    <div onClick={toggleVariant} className='cursor-pointer underline hover:text-sky-500'>
                         {variant === 'LOGIN' ? 'Create an account' : 'login'}
                     </div>
                 </div>
