@@ -15,7 +15,7 @@ type variant = 'LOGIN' | 'REGISTER';
 
 const AuthForm = () => {
     const session = useSession()
-    const router = useRouter
+    const router = useRouter()
     const [variant, setVariant] = useState<variant>('LOGIN')
     const [isLoading, setIsLoading] = useState(false)
     
@@ -49,6 +49,7 @@ const AuthForm = () => {
 
         if(variant === 'REGISTER'){
             axios.post('/api/register', data)
+            .then(() => signIn('credentials', data))
             .catch(() => toast.error('Something went wrong'))
             .finally(() => setIsLoading(false))
         }
@@ -81,6 +82,8 @@ const AuthForm = () => {
 
             if(callback?.ok && !callback?.error){
                 toast.success('logged In')
+                router.push('/users')
+
             }
         })
 
