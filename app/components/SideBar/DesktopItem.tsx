@@ -44,7 +44,7 @@ const DesktopItem: React.FC<DesktopItemProps> = ({
              active && 'bg-gray-100 text-black'
           )}
         >
-            <Icon classname='h-10 w-10 shrink-0' />
+            <Icon className='h-6 w-6 shrink-0' />
             <span className="sr-only">{label}</span>
         </Link>
     </li>
