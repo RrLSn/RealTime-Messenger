@@ -16,7 +16,23 @@ const useRoutes = () => {
     href: '/conversations',
     icon: HiChat,
     active: pathname === '/conversations' || !!conversationId
-  }], [pathname, conversationId])
+  },
+  {
+    label: 'Users',
+    href: '/users',
+    icon: HiUsers,
+    active: pathname === '/users'
+  },
+  {
+    label: 'Logout',
+    href: '#',
+    onClick: () => signOut(),
+    icon: HiArrowLeftOnRectangle
+  }
+], [pathname, conversationId])
+
+    return routes
+
 }
 
 export default useRoutes
